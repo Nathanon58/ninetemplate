@@ -5,7 +5,6 @@ import { LoginPage } from "./pages/Login";
 // import { Logout } from "./components/Logout";
 
 import { Home } from "./pages/Home";
-import { Logout } from "./components/Logout";
 
 export const router = createBrowserRouter([
   {
@@ -16,20 +15,16 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        // loader: deskIndexLoader,
-        // action: deskIndexAction, // FIXME: action is defined to call api
         element: <Home />,
       },
     ],
   },
   {
     path: "/login",
-    // action: LoginAction,
     element: <LoginPage />,
   },
   {
     path: "/logout",
-    // action: LoginAction,
     element: <Logout />,
   },
 ]);
